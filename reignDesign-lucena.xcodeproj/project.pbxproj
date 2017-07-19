@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C5E52611F1ECC360085A4A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52601F1ECC360085A4A2 /* AppDelegate.swift */; };
+		3C5E52631F1ECC360085A4A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52621F1ECC360085A4A2 /* ViewController.swift */; };
+		3C5E52661F1ECC360085A4A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E52641F1ECC360085A4A2 /* Main.storyboard */; };
+		3C5E52681F1ECC360085A4A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E52671F1ECC360085A4A2 /* Assets.xcassets */; };
+		3C5E526B1F1ECC360085A4A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E52691F1ECC360085A4A2 /* LaunchScreen.storyboard */; };
+		3C5E52771F1ED0500085A4A2 /* Hit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52761F1ED0500085A4A2 /* Hit.swift */; };
+		3C5E527A1F1ED6480085A4A2 /* HitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52781F1ED6480085A4A2 /* HitsViewController.swift */; };
+		3C5E527B1F1ED6480085A4A2 /* HitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E52791F1ED6480085A4A2 /* HitsViewController.xib */; };
+		3C5E527E1F1ED7710085A4A2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E527C1F1ED7710085A4A2 /* WebViewController.swift */; };
+		3C5E527F1F1ED7710085A4A2 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E527D1F1ED7710085A4A2 /* WebViewController.xib */; };
+		3C5E52811F1ED7B40085A4A2 /* HitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52801F1ED7B40085A4A2 /* HitsViewModel.swift */; };
+		3C5E52831F1ED7C70085A4A2 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52821F1ED7C70085A4A2 /* WebViewModel.swift */; };
+		3C5E52861F1ED8680085A4A2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52851F1ED8680085A4A2 /* Coordinator.swift */; };
+		3C5E52881F1ED87B0085A4A2 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52871F1ED87B0085A4A2 /* RootCoordinator.swift */; };
+		3C5E528A1F1ED8960085A4A2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52891F1ED8960085A4A2 /* HomeCoordinator.swift */; };
+		3C5E528E1F1ED97C0085A4A2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E528D1F1ED97C0085A4A2 /* ApiError.swift */; };
+		3C5E52901F1ED9950085A4A2 /* NSData+JSONDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E528F1F1ED9950085A4A2 /* NSData+JSONDictionary.swift */; };
+		3C5E52921F1ED9B40085A4A2 /* ErrorPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52911F1ED9B40085A4A2 /* ErrorPresentable.swift */; };
+		3C5E52951F1ED9E50085A4A2 /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52941F1ED9E50085A4A2 /* LocalizableString.swift */; };
+		3C5E52971F1EDA080085A4A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E52961F1EDA080085A4A2 /* Localizable.strings */; };
+		3C5E529A1F1EDDCC0085A4A2 /* HitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52981F1EDDCC0085A4A2 /* HitsTableViewCell.swift */; };
+		3C5E529B1F1EDDCC0085A4A2 /* HitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C5E52991F1EDDCC0085A4A2 /* HitsTableViewCell.xib */; };
+		3C5E529F1F1EDE050085A4A2 /* HitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E529E1F1EDE050085A4A2 /* HitAPI.swift */; };
+		3C5E52A11F1EDE200085A4A2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52A01F1EDE200085A4A2 /* Router.swift */; };
+		3C5E52A31F1EDF430085A4A2 /* HitsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52A21F1EDF430085A4A2 /* HitsNetworkService.swift */; };
+		3C5E52A51F1EDF570085A4A2 /* HitsDiskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52A41F1EDF570085A4A2 /* HitsDiskService.swift */; };
+		3C5E52A71F1EF6F00085A4A2 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E52A61F1EF6F00085A4A2 /* DateHelper.swift */; };
+		CDD8D86947C1753B476D4770 /* Pods_reignDesign_lucena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D57A4BE6F57CDB6DDEA587 /* Pods_reignDesign_lucena.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C5E525D1F1ECC360085A4A2 /* reignDesign-lucena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reignDesign-lucena.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5E52601F1ECC360085A4A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C5E52621F1ECC360085A4A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C5E52651F1ECC360085A4A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C5E52671F1ECC360085A4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C5E526A1F1ECC360085A4A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C5E526C1F1ECC360085A4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C5E52761F1ED0500085A4A2 /* Hit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hit.swift; sourceTree = "<group>"; };
+		3C5E52781F1ED6480085A4A2 /* HitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitsViewController.swift; sourceTree = "<group>"; };
+		3C5E52791F1ED6480085A4A2 /* HitsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HitsViewController.xib; sourceTree = "<group>"; };
+		3C5E527C1F1ED7710085A4A2 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3C5E527D1F1ED7710085A4A2 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		3C5E52801F1ED7B40085A4A2 /* HitsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitsViewModel.swift; sourceTree = "<group>"; };
+		3C5E52821F1ED7C70085A4A2 /* WebViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		3C5E52851F1ED8680085A4A2 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3C5E52871F1ED87B0085A4A2 /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		3C5E52891F1ED8960085A4A2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		3C5E528D1F1ED97C0085A4A2 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		3C5E528F1F1ED9950085A4A2 /* NSData+JSONDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+JSONDictionary.swift"; sourceTree = "<group>"; };
+		3C5E52911F1ED9B40085A4A2 /* ErrorPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorPresentable.swift; sourceTree = "<group>"; };
+		3C5E52941F1ED9E50085A4A2 /* LocalizableString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
+		3C5E52961F1EDA080085A4A2 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		3C5E52981F1EDDCC0085A4A2 /* HitsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitsTableViewCell.swift; sourceTree = "<group>"; };
+		3C5E52991F1EDDCC0085A4A2 /* HitsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HitsTableViewCell.xib; sourceTree = "<group>"; };
+		3C5E529E1F1EDE050085A4A2 /* HitAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitAPI.swift; sourceTree = "<group>"; };
+		3C5E52A01F1EDE200085A4A2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3C5E52A21F1EDF430085A4A2 /* HitsNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitsNetworkService.swift; sourceTree = "<group>"; };
+		3C5E52A41F1EDF570085A4A2 /* HitsDiskService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitsDiskService.swift; sourceTree = "<group>"; };
+		3C5E52A61F1EF6F00085A4A2 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		73D57A4BE6F57CDB6DDEA587 /* Pods_reignDesign_lucena.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reignDesign_lucena.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64E50B06FF62F9010F7929B /* Pods-reignDesign-lucena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reignDesign-lucena.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reignDesign-lucena/Pods-reignDesign-lucena.debug.xcconfig"; sourceTree = "<group>"; };
+		EB79682DB64A29A5306DE6B0 /* Pods-reignDesign-lucena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reignDesign-lucena.release.xcconfig"; path = "Pods/Target Support Files/Pods-reignDesign-lucena/Pods-reignDesign-lucena.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C5E525A1F1ECC360085A4A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD8D86947C1753B476D4770 /* Pods_reignDesign_lucena.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A1BCC38B0A982EC47DFC292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73D57A4BE6F57CDB6DDEA587 /* Pods_reignDesign_lucena.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C5E52541F1ECC360085A4A2 = {
+			isa = PBXGroup;
+			children = (
+				3C5E525F1F1ECC360085A4A2 /* reignDesign-lucena */,
+				3C5E525E1F1ECC360085A4A2 /* Products */,
+				A7BDA3C6F543DBF46AC2D2C4 /* Pods */,
+				3A1BCC38B0A982EC47DFC292 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3C5E525E1F1ECC360085A4A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E525D1F1ECC360085A4A2 /* reignDesign-lucena.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C5E525F1F1ECC360085A4A2 /* reignDesign-lucena */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E52751F1ECCF60085A4A2 /* Model */,
+				3C5E52741F1ECCE90085A4A2 /* View Controllers */,
+				3C5E52731F1ECCE10085A4A2 /* Utilities */,
+				3C5E52721F1ECCD90085A4A2 /* API */,
+				3C5E52601F1ECC360085A4A2 /* AppDelegate.swift */,
+				3C5E52621F1ECC360085A4A2 /* ViewController.swift */,
+				3C5E52641F1ECC360085A4A2 /* Main.storyboard */,
+				3C5E52671F1ECC360085A4A2 /* Assets.xcassets */,
+				3C5E52691F1ECC360085A4A2 /* LaunchScreen.storyboard */,
+				3C5E526C1F1ECC360085A4A2 /* Info.plist */,
+			);
+			path = "reignDesign-lucena";
+			sourceTree = "<group>";
+		};
+		3C5E52721F1ECCD90085A4A2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E529D1F1EDDEC0085A4A2 /* Service */,
+				3C5E529C1F1EDDE30085A4A2 /* Networking */,
+				3C5E529E1F1EDE050085A4A2 /* HitAPI.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		3C5E52731F1ECCE10085A4A2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E52931F1ED9DB0085A4A2 /* Localizable */,
+				3C5E528C1F1ED9660085A4A2 /* Cell */,
+				3C5E528B1F1ED95F0085A4A2 /* Errors */,
+				3C5E52841F1ED84D0085A4A2 /* Coordinators */,
+				3C5E52A61F1EF6F00085A4A2 /* DateHelper.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		3C5E52741F1ECCE90085A4A2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E52781F1ED6480085A4A2 /* HitsViewController.swift */,
+				3C5E52791F1ED6480085A4A2 /* HitsViewController.xib */,
+				3C5E527C1F1ED7710085A4A2 /* WebViewController.swift */,
+				3C5E527D1F1ED7710085A4A2 /* WebViewController.xib */,
+				3C5E52801F1ED7B40085A4A2 /* HitsViewModel.swift */,
+				3C5E52821F1ED7C70085A4A2 /* WebViewModel.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3C5E52751F1ECCF60085A4A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E52761F1ED0500085A4A2 /* Hit.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3C5E52841F1ED84D0085A4A2 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E52851F1ED8680085A4A2 /* Coordinator.swift */,
+				3C5E52871F1ED87B0085A4A2 /* RootCoordinator.swift */,
+				3C5E52891F1ED8960085A4A2 /* HomeCoordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		3C5E528B1F1ED95F0085A4A2 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E528D1F1ED97C0085A4A2 /* ApiError.swift */,
+				3C5E528F1F1ED9950085A4A2 /* NSData+JSONDictionary.swift */,
+				3C5E52911F1ED9B40085A4A2 /* ErrorPresentable.swift */,
+			);
+			name = Errors;
+			sourceTree = "<group>";
+		};
+		3C5E528C1F1ED9660085A4A2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E52981F1EDDCC0085A4A2 /* HitsTableViewCell.swift */,
+				3C5E52991F1EDDCC0085A4A2 /* HitsTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		3C5E52931F1ED9DB0085A4A2 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E52941F1ED9E50085A4A2 /* LocalizableString.swift */,
+				3C5E52961F1EDA080085A4A2 /* Localizable.strings */,
+			);
+			name = Localizable;
+			sourceTree = "<group>";
+		};
+		3C5E529C1F1EDDE30085A4A2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E52A01F1EDE200085A4A2 /* Router.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		3C5E529D1F1EDDEC0085A4A2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E52A21F1EDF430085A4A2 /* HitsNetworkService.swift */,
+				3C5E52A41F1EDF570085A4A2 /* HitsDiskService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		A7BDA3C6F543DBF46AC2D2C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C64E50B06FF62F9010F7929B /* Pods-reignDesign-lucena.debug.xcconfig */,
+				EB79682DB64A29A5306DE6B0 /* Pods-reignDesign-lucena.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C5E525C1F1ECC360085A4A2 /* reignDesign-lucena */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C5E526F1F1ECC360085A4A2 /* Build configuration list for PBXNativeTarget "reignDesign-lucena" */;
+			buildPhases = (
+				074C3C59AEE71ED59BD7B586 /* [CP] Check Pods Manifest.lock */,
+				3C5E52591F1ECC360085A4A2 /* Sources */,
+				3C5E525A1F1ECC360085A4A2 /* Frameworks */,
+				3C5E525B1F1ECC360085A4A2 /* Resources */,
+				40D09DD0E8075F27D1C2D3F7 /* [CP] Embed Pods Frameworks */,
+				F51DAFADCAB0FFE56D7A0C82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "reignDesign-lucena";
+			productName = "reignDesign-lucena";
+			productReference = 3C5E525D1F1ECC360085A4A2 /* reignDesign-lucena.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C5E52551F1ECC360085A4A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Graciela Lucena";
+				TargetAttributes = {
+					3C5E525C1F1ECC360085A4A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 3C5E52581F1ECC360085A4A2 /* Build configuration list for PBXProject "reignDesign-lucena" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C5E52541F1ECC360085A4A2;
+			productRefGroup = 3C5E525E1F1ECC360085A4A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C5E525C1F1ECC360085A4A2 /* reignDesign-lucena */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C5E525B1F1ECC360085A4A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5E529B1F1EDDCC0085A4A2 /* HitsTableViewCell.xib in Resources */,
+				3C5E526B1F1ECC360085A4A2 /* LaunchScreen.storyboard in Resources */,
+				3C5E52971F1EDA080085A4A2 /* Localizable.strings in Resources */,
+				3C5E52681F1ECC360085A4A2 /* Assets.xcassets in Resources */,
+				3C5E527B1F1ED6480085A4A2 /* HitsViewController.xib in Resources */,
+				3C5E527F1F1ED7710085A4A2 /* WebViewController.xib in Resources */,
+				3C5E52661F1ECC360085A4A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		074C3C59AEE71ED59BD7B586 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40D09DD0E8075F27D1C2D3F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reignDesign-lucena/Pods-reignDesign-lucena-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F51DAFADCAB0FFE56D7A0C82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reignDesign-lucena/Pods-reignDesign-lucena-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C5E52591F1ECC360085A4A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5E528E1F1ED97C0085A4A2 /* ApiError.swift in Sources */,
+				3C5E52861F1ED8680085A4A2 /* Coordinator.swift in Sources */,
+				3C5E52631F1ECC360085A4A2 /* ViewController.swift in Sources */,
+				3C5E52611F1ECC360085A4A2 /* AppDelegate.swift in Sources */,
+				3C5E52811F1ED7B40085A4A2 /* HitsViewModel.swift in Sources */,
+				3C5E52A71F1EF6F00085A4A2 /* DateHelper.swift in Sources */,
+				3C5E52A51F1EDF570085A4A2 /* HitsDiskService.swift in Sources */,
+				3C5E527A1F1ED6480085A4A2 /* HitsViewController.swift in Sources */,
+				3C5E529F1F1EDE050085A4A2 /* HitAPI.swift in Sources */,
+				3C5E52921F1ED9B40085A4A2 /* ErrorPresentable.swift in Sources */,
+				3C5E52A31F1EDF430085A4A2 /* HitsNetworkService.swift in Sources */,
+				3C5E527E1F1ED7710085A4A2 /* WebViewController.swift in Sources */,
+				3C5E529A1F1EDDCC0085A4A2 /* HitsTableViewCell.swift in Sources */,
+				3C5E52A11F1EDE200085A4A2 /* Router.swift in Sources */,
+				3C5E52771F1ED0500085A4A2 /* Hit.swift in Sources */,
+				3C5E52901F1ED9950085A4A2 /* NSData+JSONDictionary.swift in Sources */,
+				3C5E528A1F1ED8960085A4A2 /* HomeCoordinator.swift in Sources */,
+				3C5E52881F1ED87B0085A4A2 /* RootCoordinator.swift in Sources */,
+				3C5E52831F1ED7C70085A4A2 /* WebViewModel.swift in Sources */,
+				3C5E52951F1ED9E50085A4A2 /* LocalizableString.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C5E52641F1ECC360085A4A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C5E52651F1ECC360085A4A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C5E52691F1ECC360085A4A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C5E526A1F1ECC360085A4A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C5E526D1F1ECC360085A4A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C5E526E1F1ECC360085A4A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C5E52701F1ECC360085A4A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64E50B06FF62F9010F7929B /* Pods-reignDesign-lucena.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "reignDesign-lucena/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GracielaLucena.reignDesign-lucena";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3C5E52711F1ECC360085A4A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB79682DB64A29A5306DE6B0 /* Pods-reignDesign-lucena.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "reignDesign-lucena/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GracielaLucena.reignDesign-lucena";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C5E52581F1ECC360085A4A2 /* Build configuration list for PBXProject "reignDesign-lucena" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C5E526D1F1ECC360085A4A2 /* Debug */,
+				3C5E526E1F1ECC360085A4A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C5E526F1F1ECC360085A4A2 /* Build configuration list for PBXNativeTarget "reignDesign-lucena" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C5E52701F1ECC360085A4A2 /* Debug */,
+				3C5E52711F1ECC360085A4A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C5E52551F1ECC360085A4A2 /* Project object */;
+}

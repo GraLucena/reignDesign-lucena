@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  reignDesign-lucena
+
+  Created by Graciela Lucena on 7/18/17.
+  Copyright © 2017 Graciela Lucena. All rights reserved.
+*/
+
+//MARK: - Global
+"Ok" = "Ok";
+
+
+//MARK: - Errors
+"Connection error" = "Connection error";
+"There was a problem, please try again." = "There was a problem, please try again.";
+"Offline error" = "Offline error";
+"Check your internet connection and try again." = "Check your internet connection and try again.";
